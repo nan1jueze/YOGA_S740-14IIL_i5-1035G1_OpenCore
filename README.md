@@ -19,7 +19,7 @@ If you're using `i7-1065G7` variant, see: [frozenzero123/YOGA-S740](https://gith
 如果你在使用`i7-1065G7`版本，请使用[frozenzero123/YOGA-S740](https://github.com/frozenzero123/YOGA-S740)。本仓库基于此仓库内容精简修改而来。
 
 
-## Current Issues / 目前存在的问
+## Current Issues / 目前存在的问题
 
 ### NOT Working / 不工作
 
