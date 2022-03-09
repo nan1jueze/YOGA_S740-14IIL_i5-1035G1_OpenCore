@@ -1188,17 +1188,7 @@
                     <key>Enabled</key>
                     <true/>
                     <key>Path</key>
-                    <string>OpenHfsPlus.efi</string>
-                </dict>
-                <dict>
-                    <key>Arguments</key>
-                    <string></string>
-                    <key>Comment</key>
-                    <string></string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>Path</key>
-                    <string>CrScreenshotDxe.efi</string>
+                    <string>HfsPlus.efi</string>
                 </dict>
             </array>
             <key>Input</key>
