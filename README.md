@@ -24,7 +24,7 @@ If you're using `i7-1065G7` variant, see: [frozenzero123/YOGA-S740](https://gith
 ### NOT Working / 不工作
 
 | Feature | Status  | Remarks |
-| --- | --- | --- | --- |
+| --- | --- | --- |
 | IR Sensor </br>红外人脸识别传感器 | ❌ |   macOS does not support such sensor.</br>macOS不支持这一类传感器|
 | Intel SST Microphone Arrays</br>英特尔智音技术麦克风阵列 | ❌ |  Intel SST is not supported by AppleALC due to brand-new structure. </br>AppleALC 不支持 Intel 智音技术驱动的麦克风阵列 |
 | dGPU | ❌ | Nvidia, xxxx xxx! |
@@ -32,14 +32,14 @@ If you're using `i7-1065G7` variant, see: [frozenzero123/YOGA-S740](https://gith
 ### Working with Issues/ 工作但存在问题
 
 | Feature | Status  | Remarks |
-| --- | --- | --- | --- |
+| --- | --- | --- | 
 | Sleep </br>睡眠| ？ |   Yoga S740 only support `S0 modern standby` or `AOAC`(Always-On & Always-Connected), traditional `S3` is unsupported. The 'sleep' process cost 3-4% of battery pre hour， which consumes more power compared to the laptop supports `S3`. </br>由于Yoga S740只采用`S0现代待机`，又称`AOAC`（全时在线）技术， 并不支持传统的`S3`睡眠。这一睡眠会在每小时消耗3-4%的电池电量，明显高于支持`S3`睡眠的笔记本。|
 | Keyboard Light</br>键盘灯 | ？ |   Due to macOS does not support `S0 modern standby` and `WMI` area of the laptop, the keyboard backlight need to be turned off manually with `Fn+Space` before closing the lid.</br>由于macOS不支持`S0现代待机`以及对`WMI`的控制，在关闭笔记本盖子进入睡眠后，键盘灯无法自动关闭，需要提前按下`Fn+空格`手动关闭背光。|
 
 
 ### Untested / 尚未测试
 | Feature | Status  | Remarks |
-| --- | --- | --- | --- |
+| --- | --- | --- | 
 |Thunderbolt 3</br>雷电3接口|Maybe|Most IceLake laptops' Thunderbolt port works out of box, even under macOS.</br>大多数Icelake笔记本的雷电3接口即使是在macOS下是免驱动的。|
 
 
@@ -47,7 +47,7 @@ If you're using `i7-1065G7` variant, see: [frozenzero123/YOGA-S740](https://gith
 ## What's Working
 ### Power Management / 电源管理
 | Feature | Status  | Remarks |
-| --- | --- | --- | --- |
+| --- | --- | --- | 
 |CPU Power Management</br>CPU电源管理| ✅ |SMBIOS:`MacbookPro16,2`</br>CPU frequency reaches 800MHz under no load conditions.</br>CPU在空载下默认可达到800MHz|
 |Battery Status </br>电池电量显示|✅ |`ACPIBatteryManager.kext`+`ECEnabler.kext`
 |iGPU Acceleration</br>核显加速|✅ | `AAPL,ig-platform-id`: `0x8A510002`</br>`device-id`:`0x8A51`|
@@ -56,14 +56,14 @@ If you're using `i7-1065G7` variant, see: [frozenzero123/YOGA-S740](https://gith
 
 ### Display / 显示
 | Feature | Status  | Remarks |
-| --- | --- | --- | --- |
+| --- | --- | --- | 
 |Brightness Keys</br>亮度背光快捷键| ✅ |`BrightnessKeys.kext`</br>`_SB.PCI0.LPCB.OSYS`=`0x07DF`|
 |Auto display after wake</br>开盖后自动亮屏| ✅ |Modified `ECDT`|
 |HiDPI|✅ |Recommend `1600x900` as HiDPI resolution.</br>推荐使用`1600x900`的HiDPI分辨率|
 
 ### IO / 输入输出
 | Feature | Status  | Remarks |
-| --- | --- | --- | --- |
+| --- | --- | --- |
 |AX201 WLAN|✅|`AirportItlwm.kext`, support `802.11ax`(WiFi6), much faster than Broadcom Wireless Cards|
 |AX201 BT|✅|`IntelBluetoothFirmware.kext` + `IntelBluetoothInjector.kext`|
 |Speakers/Headphone Combo Jack </br>扬声器与3.5毫米耳机接口 | ✅|`AppleALC.kext`, ALC285, `layout-id`=`88`  |
