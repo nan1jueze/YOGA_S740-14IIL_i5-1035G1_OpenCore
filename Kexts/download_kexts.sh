@@ -224,7 +224,7 @@ function download() {
   dGR VoodooI2C VoodooI2C NULL "${OUTDir_TMP}"
   dGR 1Revenger1 ECEnabler NULL "${OUTDir_TMP}"
   dGR zhen-zen YogaSMC NULL "${OUTDir_TMP}"
-  dGR zhen-zen ThermalSolution NULL "${OUTDir_TMP}"
+  #dGR zhen-zen ThermalSolution NULL "${OUTDir_TMP}"
   
   
      
@@ -272,6 +272,7 @@ function install() {
     "IntelBluetoothFirmware.kext"
     "IntelBluetoothInjector.kext"
     "Kexts/SMCProcessor.kext"
+    "Kexts/SMCLightSensor.kext"
     "Kexts/VirtualSMC.kext"
     "Lilu.kext"
     "Kexts/VirtualSMC.kext"
@@ -281,7 +282,7 @@ function install() {
     "VoodooI2CHID.kext"
     "VoodooPS2Controller.kext"
     "ECEnabler.kext"
-    "ThermalSolution.kext"
+    #"ThermalSolution.kext"
     "WhateverGreen.kext"
     "Big Sur/AirportItlwm.kext"
     "YogaSMC.kext"

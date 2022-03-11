@@ -62,6 +62,14 @@
                     <key>Path</key>
                     <string>SSDT-TPD0-GPIO-yoga_s740.aml</string>
                 </dict>
+                <dict>
+                    <key>Comment</key>
+                    <string>S3 deep idle sequence device</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Path</key>
+                    <string>SSDT-ENPE.aml</string>
+                </dict>
             </array>
             <key>Delete</key>
             <array>
@@ -510,7 +518,7 @@
                     <key>Comment</key>
                     <string>V1</string>
                     <key>Enabled</key>
-                    <false/>
+                    <true/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/ThermalSolution</string>
                     <key>MaxKernel</key>
@@ -639,6 +647,24 @@
                     <true/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/YogaSMC</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
+                    <string>SMCLightSensor.kext</string>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/SMCLightSensor</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
