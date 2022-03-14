@@ -35,6 +35,7 @@ If you're using `i7-1065G7` variant, see: [frozenzero123/YOGA-S740](https://gith
 | --- | --- | --- | 
 | Sleep </br>睡眠| ？ |   Yoga S740 only support `S0 modern standby` or `AOAC`(Always-On & Always-Connected), traditional `S3` is unsupported. The 'sleep' process cost 3-4% of battery pre hour， which consumes more power compared to the laptop supports `S3`. </br>由于Yoga S740只采用`S0现代待机`，又称`AOAC`（全时在线）技术， 并不支持传统的`S3`睡眠。这一睡眠会在每小时消耗3-4%的电池电量，明显高于支持`S3`睡眠的笔记本。|
 | Keyboard Light</br>键盘灯 | ~~？~~ ✅ |   ~~Due to macOS does not support `S0 modern standby` and `WMI` area of the laptop, the keyboard backlight need to be turned off manually with `Fn+Space` before closing the lid.~~</br>~~由于macOS不支持`S0现代待机`以及对`WMI`的控制，在关闭笔记本盖子进入睡眠后，键盘灯无法自动关闭，需要提前按下`Fn+空格`手动关闭背光。~~</br>Fixed by enabling `PEDP` and cutting edge version of `ThermalSolution.kext`，special thanks to [Zhen-zen](https://github.com/zhen-zen). Now the laptop has near the same behavior when sleeping in S0 deep idle state as Windows.|
+|Touchpad</br>触摸板|?</br> **Help Wanted**|`APIC Pin=0x30`(IRQ 48). Works at polling mode currently. </br>Touchpad uses APIC interrupt under Windows and Linux and no implementation for GPIO interrupt is presented in ACPI. If force return `SBFB,SBFG` under `TPD0` for `_DSM` and `CRS`, VoodooGPIO could handle GPIO Pin `0x30` with a hardware pin `0x18` without any timeout. However, the touchpad is stuck and the cursor could not move and no finger input could be recognized.</br>|
 
 
 ### Untested / 尚未测试
@@ -68,7 +69,7 @@ If you're using `i7-1065G7` variant, see: [frozenzero123/YOGA-S740](https://gith
 |AX201 BT|✅|`IntelBluetoothFirmware.kext` + `IntelBluetoothInjector.kext`|
 |Speakers/Headphone Combo Jack </br>扬声器与3.5毫米耳机接口 | ✅|`AppleALC.kext`, ALC285, `layout-id`=`88`  |
 |Camera</br>摄像头|✅|USB UVC camera|
-|Touchpad</br>触摸板|✅|`VoodooI2C.kext`, `GPIO Pin`=`0x0e`</br>Also supported by `VoodooRMI`|
+
 
 
 ## Requirements / 需求和依赖
