@@ -8,14 +8,6 @@
             <array>
                 <dict>
                     <key>Comment</key>
-                    <string></string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>Path</key>
-                    <string>ECDT.aml</string>
-                </dict>
-                <dict>
-                    <key>Comment</key>
                     <string>Fake device and properties</string>
                     <key>Enabled</key>
                     <true/>
@@ -72,22 +64,7 @@
                 </dict>
             </array>
             <key>Delete</key>
-            <array>
-                <dict>
-                    <key>All</key>
-                    <false/>
-                    <key>Comment</key>
-                    <string></string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>OemTableId</key>
-                    <data>Q0ItMDEgICA=</data>
-                    <key>TableLength</key>
-                    <integer>0</integer>
-                    <key>TableSignature</key>
-                    <data>RUNEVA==</data>
-                </dict>
-            </array>
+            <array/>
             <key>Patch</key>
             <array>
                 <dict>
@@ -252,7 +229,7 @@
                 <key>ResetHwSig</key>
                 <true/>
                 <key>ResetLogoStatus</key>
-                <true/>
+                <false/>
                 <key>SyncTableIds</key>
                 <false/>
             </dict>
@@ -796,6 +773,8 @@
                     <string></string>
                     <key>MinKernel</key>
                     <string></string>
+                    <key>Strategy</key>
+                    <string>Disable</string>
                 </dict>
             </array>
             <key>Emulate</key>
@@ -976,6 +955,8 @@
                 <integer>0</integer>
                 <key>DisplayLevel</key>
                 <integer>2147483650</integer>
+                <key>LogModules</key>
+                <string>*</string>
                 <key>SerialInit</key>
                 <false/>
                 <key>SysReport</key>
