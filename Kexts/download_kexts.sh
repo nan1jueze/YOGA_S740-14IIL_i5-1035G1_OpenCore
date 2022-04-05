@@ -210,7 +210,7 @@ function download() {
     itlwm
   )
 
-  dBR Rehabman os-x-acpi-battery-driver "${OUTDir_TMP}"
+  #dBR Rehabman os-x-acpi-battery-driver "${OUTDir_TMP}"
 
   for acdtKext in "${acdtKexts[@]}"; do
     dGR ${ACDT} "${acdtKext}" NULL "${OUTDir_TMP}"
@@ -242,9 +242,9 @@ function unpack() {
 # Patch
 function patch() {
   local unusedItems=(
-    "BlueToolFixup.kext/Contents/_CodeSignature"
+    #"BlueToolFixup.kext/Contents/_CodeSignature"
 
-    "Kexts/SMCBatteryManager.kext"
+    #"Kexts/SMCBatteryManager.kext"
     "RestrictEvents.kext/Contents/_CodeSignature"
     "VoodooI2C.kext/Contents/PlugIns/VoodooInput.kext.dSYM"
     "VoodooI2C.kext/Contents/PlugIns/VoodooInput.kext/Contents/_CodeSignature"
@@ -268,15 +268,15 @@ function patch() {
 function install() {
   local kextItems=(
     "AppleALC.kext"
-    #"BlueToolFixup.kext"
+    "BlueToolFixup.kext"
     "IntelBluetoothFirmware.kext"
     "IntelBluetoothInjector.kext"
     "Kexts/SMCProcessor.kext"
     "Kexts/SMCLightSensor.kext"
-    "Kexts/VirtualSMC.kext"
+    "Kexts/SMCBatteryManager.kext"
     "Lilu.kext"
     "Kexts/VirtualSMC.kext"
-    "Release/ACPIBatteryManager.kext"
+    #"Release/ACPIBatteryManager.kext"
     "RestrictEvents.kext"
     "VoodooI2C.kext"
     "VoodooI2CHID.kext"
