@@ -5,24 +5,24 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleGetInfoString</key>
-	<string>v1.0</string>
+	<string>v1.1</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.corpnewt.USBMap</string>
+	<string>com.dhinakg.USBToolBox.map</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>USBMap</string>
+	<string>UTBMap</string>
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>1.1</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>1.0</string>
+	<string>1.1</string>
 	<key>IOKitPersonalities</key>
 	<dict>
-		<key>MacBookPro16,2-TXHC</key>
+		<key>TXHC</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
 			<string>com.apple.driver.AppleUSBHostMergeProperties</string>
@@ -37,11 +37,9 @@
 				</dict>
 			</dict>
 			<key>IOProviderClass</key>
-			<string>AppleUSBXHCIPCI</string>
+			<string>AppleUSBHostController</string>
 			<key>IOProviderMergeProperties</key>
 			<dict>
-				<key>kUSBMuxEnabled</key>
-				<true/>
 				<key>port-count</key>
 				<data>
 				AgAAAA==
@@ -50,8 +48,6 @@
 				<dict>
 					<key>SS01</key>
 					<dict>
-						<key>Comment</key>
-						<string>9(TypeC+Sw)</string>
 						<key>UsbConnector</key>
 						<integer>9</integer>
 						<key>port</key>
@@ -62,9 +58,9 @@
 				</dict>
 			</dict>
 			<key>model</key>
-			<string>MacBookPro16,2</string>
+			<string>MacBookAir9,1</string>
 		</dict>
-		<key>MacBookPro16,2-XHC</key>
+		<key>XHC</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
 			<string>com.apple.driver.AppleUSBHostMergeProperties</string>
@@ -79,11 +75,9 @@
 				</dict>
 			</dict>
 			<key>IOProviderClass</key>
-			<string>AppleUSBXHCIPCI</string>
+			<string>AppleUSBHostController</string>
 			<key>IOProviderMergeProperties</key>
 			<dict>
-				<key>kUSBMuxEnabled</key>
-				<true/>
 				<key>port-count</key>
 				<data>
 				DgAAAA==
@@ -92,10 +86,8 @@
 				<dict>
 					<key>HS01</key>
 					<dict>
-						<key>Comment</key>
-						<string>0(USB2)</string>
 						<key>UsbConnector</key>
-						<integer>0</integer>
+						<integer>3</integer>
 						<key>port</key>
 						<data>
 						AQAAAA==
@@ -103,10 +95,8 @@
 					</dict>
 					<key>HS02</key>
 					<dict>
-						<key>Comment</key>
-						<string>0(USB2)</string>
 						<key>UsbConnector</key>
-						<integer>0</integer>
+						<integer>3</integer>
 						<key>port</key>
 						<data>
 						AgAAAA==
@@ -114,8 +104,6 @@
 					</dict>
 					<key>HS03</key>
 					<dict>
-						<key>Comment</key>
-						<string>9(TypeC+Sw)</string>
 						<key>UsbConnector</key>
 						<integer>9</integer>
 						<key>port</key>
@@ -123,10 +111,8 @@
 						AwAAAA==
 						</data>
 					</dict>
-					<key>HS05</key>
+					<key>HS04</key>
 					<dict>
-						<key>Comment</key>
-						<string>255(internal)</string>
 						<key>UsbConnector</key>
 						<integer>255</integer>
 						<key>port</key>
@@ -134,10 +120,8 @@
 						BQAAAA==
 						</data>
 					</dict>
-					<key>HS10</key>
+					<key>HS05</key>
 					<dict>
-						<key>Comment</key>
-						<string>255(internal)</string>
 						<key>UsbConnector</key>
 						<integer>255</integer>
 						<key>port</key>
@@ -147,8 +131,6 @@
 					</dict>
 					<key>SS01</key>
 					<dict>
-						<key>Comment</key>
-						<string>3(USB3)</string>
 						<key>UsbConnector</key>
 						<integer>3</integer>
 						<key>port</key>
@@ -158,8 +140,6 @@
 					</dict>
 					<key>SS02</key>
 					<dict>
-						<key>Comment</key>
-						<string>3(USB3)</string>
 						<key>UsbConnector</key>
 						<integer>3</integer>
 						<key>port</key>
@@ -170,7 +150,7 @@
 				</dict>
 			</dict>
 			<key>model</key>
-			<string>MacBookPro16,2</string>
+			<string>MacBookAir9,1</string>
 		</dict>
 	</dict>
 	<key>OSBundleRequired</key>
