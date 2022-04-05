@@ -28,7 +28,7 @@ DefinitionBlock ("", "SSDT", 2, "hack", "I2Cpatch", 0x00000000)
                 "\\_SB.PCI0.GPI0", 0x00, ResourceConsumer, ,
                 )
                 {   // Pin list
-                    0x000E
+                    0x0000
                 }
         })
         
@@ -70,7 +70,7 @@ DefinitionBlock ("", "SSDT", 2, "hack", "I2Cpatch", 0x00000000)
             }
             Else
             {
-                Return (\_SB.PCI0.I2C1.TPD0.XTSM ())
+                Return (\_SB.PCI0.I2C1.TPD0.XTSM (Arg0, Arg1, Arg2, Arg3))
             }
         }
 
