@@ -22,12 +22,28 @@
  */
 DefinitionBlock ("", "SSDT", 2, "ACDT", "SsdtEC", 0x00001000)
 {
+
     External (_SB_.PCI0.LPCB, DeviceObj)
+    External (_SB_.PCI0.LPCB.EC0_.ECAV, IntObj)
 
     If (_OSI ("Darwin"))
     {
         Scope (\_SB.PCI0.LPCB)
         {
+            Method (_STA, 0, NotSerialized)  // _STA: Status
+            {
+                
+                // Initialize ECAV (EC Availiablity) before macOS evaluating EC0 device
+                // macOS initialize devices with _STA, while Windows start with _REG and _INI
+                // However, _STA of EC0 still relys on functions in _REG, which leads to uninitialized 
+                // parameters in _STA.
+                //
+                // This helps to fix some EC-related issue without modifying ECDT table.
+                
+                \_SB.PCI0.LPCB.EC0.ECAV = One
+                Return (0x0F)
+            }
+
             Device (EC)
             {
                 Name (_HID, "ACID0001")  // _HID: Hardware ID
