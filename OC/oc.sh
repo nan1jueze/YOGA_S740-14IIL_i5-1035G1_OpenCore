@@ -107,7 +107,7 @@ function init() {
 }
 
 function download() {
-  dGR "acidanthera/OpenCorePkg" NULL "${OUTDir_TMP}"
+  dGR "acidanthera/OpenCorePkg" 61179111 "${OUTDir_TMP}"
 
   logger_info "Downloading ${magenta}https://github.com/acidanthera/OcBinaryData/archive/master.zip${reset}"
   curl -# -L -o "${OUTDir_TMP}/OcBinaryData.zip" "https://github.com/acidanthera/OcBinaryData/archive/master.zip" || networkErr "$1"
