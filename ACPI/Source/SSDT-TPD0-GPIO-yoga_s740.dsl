@@ -22,15 +22,20 @@ DefinitionBlock ("", "SSDT", 2, "hack", "I2Cpatch", 0x00000000)
 
     Scope (_SB.PCI0.I2C1.TPD0)
     {
-        Name (SBFX, ResourceTemplate ()
+
+        If (_OSI ("Darwin"))
         {
-            GpioInt (Level, ActiveLow, ExclusiveAndWake, PullDefault, 0x0000,
-                "\\_SB.PCI0.GPI0", 0x00, ResourceConsumer, ,
-                )
-                {   // Pin list
-                    0x0000
-                }
-        })
+            Name (OSYS, 0x07DF)
+            Name (SBFX, ResourceTemplate ()
+            {
+                GpioInt (Level, ActiveLow, ExclusiveAndWake, PullDefault, 0x0000,
+                    "\\_SB.PCI0.GPI0", 0x00, ResourceConsumer, ,
+                    )
+                    {   // Pin list
+                        0x0030
+                    }
+            })
+        }
         
         /*
         
