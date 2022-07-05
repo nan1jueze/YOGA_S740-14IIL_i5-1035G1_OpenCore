@@ -13,9 +13,11 @@
 | Integrated Graphics | Intel IceLake UHD Graphics 32EU / Iris Plus G4 48EU / Iris Plus G7 64EU |
 | Wireless Card | dw1820a |
 | BIOS | BYCN38WW / BYCN39WW |
-|macOS Version| macOS Big Sur 11.6.4</br>Further changes are needed if you want macOS 12</br>如果需要使用macOS 12，需要一些修改|
+|macOS Version| MacOS Ventora 13beta2</br>Further changes are needed if you want macOS 12</br>如果需要使用macOS 12，需要一些修改|
 
 To `i7-1065G7` variant, you can also see: [frozenzero123/YOGA-S740](https://github.com/frozenzero123/YOGA-S740)
+如果你在使用`i7-1065G7`版本，可以考虑使用[frozenzero123/YOGA-S740](https://github.com/frozenzero123/YOGA-S740)。本仓库基于此仓库内容精简修改而来。
+本项目是Zero-zer0的，由于Zero-zer0不再维护，而本人还在持续使用S740，opencore和驱动不断更新，本人做一些维护，也当个人备份。
 如果你在使用`i7-1065G7`版本，可以考虑使用[frozenzero123/YOGA-S740](https://github.com/frozenzero123/YOGA-S740)。本仓库基于此仓库内容精简修改而来。
 
 
