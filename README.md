@@ -1,4 +1,5 @@
 ![Banner](Docs/banner.png)
+![Banner](Docs/ventura.png)
 
 <h1 align="center">YOGA_S740-14IIL_i5-1035G1_OpenCore</h1>
 
