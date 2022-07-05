@@ -11,7 +11,7 @@
 | Memory | LPDDR4x 3733 MHz 16 GB |
 | SSD | PHISON ECFM13.3 1024GiB |
 | Integrated Graphics | Intel IceLake UHD Graphics 32EU / Iris Plus G4 48EU / Iris Plus G7 64EU |
-| Wireless Card | Intel Wireless AX201 CNVi |
+| Wireless Card | dw1820a |
 | BIOS | BYCN38WW / BYCN39WW |
 |macOS Version| macOS Big Sur 11.6.4</br>Further changes are needed if you want macOS 12</br>如果需要使用macOS 12，需要一些修改|
 
