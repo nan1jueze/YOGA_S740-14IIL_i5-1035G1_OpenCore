@@ -126,17 +126,21 @@ An example of files under `OC` folder:
 │   ├── SSDT-RHUB-Reset.aml
 │   └── SSDT-TPD0-GPIO-yoga_s740.aml
 ├── Drivers
-│   ├── HfsPlus.efi
+│   ├── OpenHfsPlus.efi
+│   ├── OpenRuntime.efi
 │   ├── OpenCanopy.efi
-│   └── OpenRuntime.efi
+│   ├── ResetNvramEntry.efi
+│   ├── CrScreenshotDxe.efi
+│   └── ToggleSipEntry.efi
 ├── Kexts
 │   ├── ACPIBatteryManager.kext
 │   ├── AirportItlwm.kext
 │   ├── AppleALC.kext
 │   ├── BrightnessKeys.kext
 │   ├── ECEnabler.kext
-│   ├── IntelBluetoothFirmware.kext
-│   ├── IntelBluetoothInjector.kext
+│   ├── BlueToolFixup.kext
+│   ├── BrcmFirmwareData.kext
+│   ├── BrcmPatchRAM3.kext
 │   ├── Lilu.kext
 │   ├── RestrictEvents.kext
 │   ├── SMCProcessor.kext
