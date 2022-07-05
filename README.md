@@ -134,7 +134,7 @@ An example of files under `OC` folder:
 │   └── ToggleSipEntry.efi
 ├── Kexts
 │   ├── ACPIBatteryManager.kext
-│   ├── AirportItlwm.kext
+│   ├── AirportBrcmFixup.kext
 │   ├── AppleALC.kext
 │   ├── BrightnessKeys.kext
 │   ├── ECEnabler.kext
